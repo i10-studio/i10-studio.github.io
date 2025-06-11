@@ -30,10 +30,10 @@ export default function Contact() {
     <div className="py-8">
       <form className="flex flex-col gap-2" onSubmit={onSubmit}>
         <label className="text-base" htmlFor="name">
-          nombre
+          name
         </label>
         <input
-          className="bg-background border-text border px-2 py-1"
+          className="border border-text bg-background px-2 py-1"
           type="text"
           name="name"
           required
@@ -43,26 +43,26 @@ export default function Contact() {
           e-mail
         </label>
         <input
-          className="bg-background border-text border px-2 py-1"
+          className="border border-text bg-background px-2 py-1"
           type="email"
           name="email"
           required
         />
 
         <label className="text-base" htmlFor="message">
-          mensaje
+          message
         </label>
         <textarea
-          className="bg-background border-text min-h-48 border px-2 py-1"
+          className="min-h-48 border border-text bg-background px-2 py-1"
           name="message"
           required
         ></textarea>
 
         <button
-          className="border-text hover:border-accent hover:bg-accent bg-text text-background mt-4 border p-1"
+          className="mt-4 border border-text bg-text p-1 text-background hover:border-accent hover:bg-accent"
           type="submit"
         >
-          enviar
+          send
         </button>
       </form>
       <span className="text-base">{result}</span>

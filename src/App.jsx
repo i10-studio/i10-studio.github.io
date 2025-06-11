@@ -22,9 +22,9 @@ function App() {
   return (
     <div className="flex h-screen w-full flex-col items-start justify-start gap-2 p-6 font-[terminal-grotesque]">
       <div className="flex flex-wrap items-center gap-3 text-3xl sm:text-6xl">
-        <h1 className="animate-pulse">a++s</h1>
+        <h1 className="animate-pulse">instrumento</h1>
         <div className="size-2 rounded-full bg-accent sm:size-3"></div>
-        <h2 className="">diseño y desarrollo web</h2>
+        <h2 className="text-2xl">web design & development studio</h2>
       </div>
       {pageData.years &&
         pageData.years.map((year) => (
@@ -57,7 +57,7 @@ function App() {
         className="mt-8 bg-text px-2 text-2xl text-background hover:bg-accent sm:text-4xl"
         onClick={() => setIsContactOpen(!isContactOpen)}
       >
-        contacto
+        contact
       </button>
 
       {isContactOpen && (
