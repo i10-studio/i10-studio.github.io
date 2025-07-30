@@ -1,9 +1,15 @@
 const data = {
   works: [
     {
+      id: "heidi-giel",
+      title: "heidigiel.com",
+      url: "https://heidigiel.com",
+      year: 2025,
+    },
+    {
       id: "aguja",
-      title: "aguja.re",
-      url: "https://aguja.re",
+      title: "aguja6167756a61.github.io",
+      url: "https://aguja6167756a61.github.io",
       year: 2025,
     },
     {
