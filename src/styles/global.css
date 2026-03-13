@@ -2,5 +2,24 @@
 
 :root {
   font-family: monospace;
+
+  color-scheme: light dark;
+  color: var(--text);
+  background-color: var(--background);
+
+  --text: #e7ecf1;
+  --background: #131411;
+}
+
+::selection {
+  background-color: var(--text);
+  color: var(--background);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #000;
+    --background: #fff;
+  }
 }
 
