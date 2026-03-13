@@ -1,14 +1,24 @@
-<form method="POST" id="form">
+<form method="POST" id="form" class="flex w-100 flex-col gap-4">
   <input
     type="hidden"
     name="access_key"
     value="1317efe3-a772-4155-87dc-e5b58ba83962"
   />
 
-  <input type="text" name="name" required />
-  <input type="email" name="email" required />
-  <textarea name="message" required></textarea>
-  <button type="submit">send</button>
+  <div class="flex flex-col">
+    <label for="name">name</label>
+    <input type="text" name="name" required class="border" />
+  </div>
+  <div class="flex flex-col">
+    <label for="email">email</label>
+    <input type="email" name="email" required class="border" />
+  </div>
+
+  <div class="flex flex-col">
+    <label for="message">message</label>
+    <textarea name="message" required class="h-30 border"></textarea>
+  </div>
+  <button type="submit" class="border">send</button>
   <div id="result"></div>
 </form>
 
@@ -54,17 +64,3 @@
       });
   });
 </script>
-
-<style>
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 400px;
-  }
-  input,
-  textarea,
-  button {
-    border: 1px solid;
-  }
-</style>
