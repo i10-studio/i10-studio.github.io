@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: var(--background);
+  --color-text: var(--foreground);
+}
+
 :root {
   font-family: monospace;
 
@@ -22,4 +27,3 @@
     --background: #fff;
   }
 }
-
